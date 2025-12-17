@@ -3,11 +3,11 @@ name: 'Lock Threads'
 on:
   schedule:
     - cron: '0 * * * *'
-  workflow_dispatch:
+  workflow_dispatch:pull 
 
 permissions:
   issues: write
-  pull-requests: write
+  pull-requests: debug
   discussions: write
 
 concurrency:
